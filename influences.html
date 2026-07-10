@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Artistic Influences</title>
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
+</head>
+
+<body>
+    <header>
+        <h1>Artistic Influences</h1>
+        <!--Icon Source: Google Fonts (https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e3e3e3)-->
+        <button id="menubutton" class="hidden">
+            ☰
+        </button>
+        <nav>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artisticprocess.html">My Artistic Process</a></li>
+                <li><a href="artwork.html">Artwork</a></li>
+                <li><a href="influences.html">Influences</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- Source:  Client Provided -->
+            <h2>Where Inspiration Comes From</h2>
+            <p>
+                Every artist stands on the shoulders of those who came before, and my work is no different. Inspiration comes from many places – specific artists I admire, broader art movements, the storytelling in different media, and even everyday observations. This page explores some of the key influences that have shaped my artistic perspective and techniques. Understanding these influences helps show the conversation I'm trying to have with the art world and with myself.
+            </p>
+            <p>
+                It's a constantly evolving list, as new discoveries always spark new ideas!
+            </p>
+        </section>
+
+        <section>
+            <!-- Source:  Client Provided -->
+            <h2>Key Artists</h2>
+            <p>
+                Certain artists resonate deeply, either through their technical skill, their emotional depth, or their unique way of seeing the world. Studying their work helps me learn and pushes me to experiment.
+            </p>
+
+            <div class="influence">
+                <div>
+                    <h3>Emily Xu (Instagram: @emilyamiao)</h3>
+
+                    <p>
+                        Emily Xu is a story artist at Walt Disney Animation Studios. Her work inspired me to go into animation, after discovering her animatics on YouTube. Looking into her other pages, I discovered more artiwork, like her Into The Spiderverse 2 artbook, that captivated me and really set my path for the future.
+                    </p>
+                </div>
+
+                <figure>
+                    <img src="images/emilyXuInspiration.jpg" alt="Walking around with an umbrella during the summer.">
+                    <button id="view-emily" class="view-image-button">
+                        View Image
+                    </button>
+                </figure>
+            </div>
+
+            <p>Source: <a href="https://www.instagram.com/p/CsXZAhvJUk5/?img_index=1"><cite>Emily Xu's drawing representing her experience transitioning to warm weather.</cite></a></p>
+
+            <div class="influence">
+                <div>
+                    <h3>Hayao Miyazaki</h3>
+                    <p>
+                        Miyazaki's ability to blend detailed natural environments with fantastical elements and complex characters has always captivated me. The way he uses color and light to convey emotion, especially in films like 'Spirited Away' or 'Princess Mononoke', encourages me to think more cinematically in my own illustrations. I admire the depth of his world-building and the subtle nuances in his character designs.
+                    </p>
+                </div>
+
+                <figure>
+                    <img src="images/Hayao+Miyazaki.jpg" alt="Miyazaki Art">
+                    <button id="view-miyazaki" class="view-image-button">
+                        View Image
+                    </button>
+                </figure>
+            </div>
+            <p>Source: <a href="https://characterdesignreferences.com/artist-of-the-week-11/hayao-miyazaki"><cite>Artist of the Week 11: Hayao Miyazaki</cite></a></p>
+        </section>
+
+        <section>
+            <!-- Source:  Client Provided -->
+            <h2>Other Inspirations</h2>
+            <p>
+                Sometimes inspiration comes from less direct sources!
+            </p>
+            <div>
+                <h3>Music</h3>
+                <p>
+                    I often listen to music while drawing or painting. Music evokes strong moods, colors, or even narrative ideas that find their way into my art. In addition, a lot of songs I listen to come with animated music videos that sometimes gives me lots of inspiration. For example, the Japanese music artist, Eve, tends to have elaborate animations for each of his songs.
+                </p>
+            </div>
+            <div>
+                <h3>Friends</h3>
+                <p>
+                    My friends were a big part of my influence. Many of them weren't artists, but they continued to encourage me to express myself and keep drawing.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- Source:  Client Provided -->
+        <h3>Contact me!</h3>
+        <p>(650) 334-6765</p>
+        <p>ivyaquablue@gmail.com</p>
+    </footer>
+
+    <div id="imageModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="modalClose" class="modal-close">×</button>
+            <!-- Source:  Client Provided -->
+            <img id="modal-img-emily" class="modal-image hidden" src="images/emilyXuInspiration.jpg" alt="Enlarged Emily Xu artwork">
+            <!-- Source:  Client Provided -->
+            <img id="modal-img-miyazaki" class="modal-image hidden" src="images/Hayao+Miyazaki.jpg" alt="Enlarged Hayao Miyazaki artwork">
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/modal.js"></script>
+</body>
+
+</html>

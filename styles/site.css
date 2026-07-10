@@ -1,0 +1,544 @@
+html {
+    background-color: #e0dbd1;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    max-width: 1100px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,h2,h3 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+nav menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav menu li {
+    margin: 5px 0;
+    display: block;
+    padding: 26px;
+}
+
+nav menu li a {
+    color: #ccc;
+    text-decoration: none;
+    font-family: 'Palatino Linotype', serif;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+nav menu li a:hover {
+    color: white;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+figure,img {
+    max-width: 260px;
+    flex: 1;
+    height: auto;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+figcaption {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
+footer h3 {
+    color: white;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.influences main div {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #ddd;
+}
+
+.influences main div:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: #666;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #333;
+}
+
+.hidden {
+    position: absolute !important;
+    left: -10000px !important;
+    top: auto !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+}
+
+
+#menubutton {
+    font-size: 180%;
+    background-color: #6e6e6e;
+    color: white;
+    border-radius: 10px;
+    border-color: black;
+    cursor: pointer;
+}
+
+#menubutton:hover {
+    background-color: black;
+    color: white;
+}
+
+.sketch-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.sketch-flex figure {
+    max-width: 150%;
+    min-width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+
+.sketch-flex img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    max-width: none;
+}
+
+.two-sketches {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carriage-img{
+    height: 280px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.headshot {
+    display: flex;
+    flex-direction: row;
+}
+
+.headshot div {
+    flex-grow: 1;
+    margin-right: 80px;
+}
+
+.influence {
+    display: flex;
+    flex-direction: row;
+}
+
+.influence div{
+    margin-right: 80px;
+}
+
+.photos-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.photos-wrapper button {
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px 10px;
+}
+
+.photos-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.carousel-wrapper button {
+    all: unset;
+}
+
+.carousel-wrapper button :hover {
+    background-color: #e0dbd1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carousel-container figure {
+    max-width: 280px;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carousel-container figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.dot-collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot-collection button {
+    all: unset;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #e0dbd1;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.dot-collection button :hover {
+    background-color:#777;
+}
+
+.clicked {
+    background-color:#777;
+}
+
+@media (max-width: 700px) {
+    nav menu {
+        flex-direction: column;
+    }
+
+    nav menu li a {
+        display: block;
+        width: auto;
+    }
+
+    .sketch-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two-sketches{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headshot, .influence{
+        flex-direction: column;
+    }
+
+    .headshot div, .influence div {
+        margin-right: 0;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    .img-buttons {
+        max-width: 95%;
+    }
+
+    .img-buttons button {
+        overflow: hidden;
+        word-break: break-word;
+    }
+
+    .photos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photos-container figure {
+        width: 90%;
+    }
+}
+
+.img-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.img-buttons button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.img-buttons button:hover {
+    background-color: #5c5b5b;
+}
+
+.gallery img {
+    width: 55%;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content:flex-start;
+    align-items: center;
+    border: none;
+    background: none;
+    color: inherit;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid#777 1.3px;
+}
+
+.top button :hover {
+    background-color: #e0dbd1;
+}
+
+.bar {
+    width: 90%;
+    border: solid #777;
+}
+
+.bar p {
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+
+.bar1 p {
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+
+.bar1 {
+    width: 90%;
+    border: solid #777;
+    border-top: none;
+}
+
+.accordion h3 {
+    margin-left: 20px;
+}
+
+.section-button button{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+.section-button button:hover {
+    background-color: #555;
+}
+
+.view-image-button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.view-image-button:hover {
+  background-color: #333;
+}
+
+.modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  padding: 25px;
+  border: 1px solid #888;
+  width: auto;
+  max-width: 85vw;
+  max-height: 85vh;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image {
+  display: block;
+  max-width: 100%;
+  max-height: calc(85vh - 50px);
+  height: auto;
+  width: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 5px;
+  z-index: 1010;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.influence figure {
+    max-width: 260px;
+    flex: 1;
+    height: auto;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
